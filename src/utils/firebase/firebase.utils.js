@@ -59,7 +59,6 @@ export const addCollectionAndDocuments = async (
   });
 
   await batch.commit();
-  console.log("done");
 };
 
 export const getCategoriesAndDocuments = async () => {
@@ -74,7 +73,6 @@ export const getCategoriesAndDocuments = async () => {
     return acc;
   }, {});
 
-  console.log("after reduce", categoryMap);
   return categoryMap;
 };
 
